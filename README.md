@@ -1,4 +1,4 @@
-# TwitchAPI
+# Twitch
 
 
 **Requirements:**

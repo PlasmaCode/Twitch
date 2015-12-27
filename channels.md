@@ -2,6 +2,7 @@
 
 To grab information from a channel simply do:
 
+    //both parameters are a string
     $channelFollows = $Twitch->channel($channelName, $requestedInfo);
 
 Figuring out if the channel "lirik" is mature or not is as easy as below:

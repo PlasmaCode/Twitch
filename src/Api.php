@@ -27,8 +27,8 @@ class Api
      * This method is used to specify the desired channel and the type of information it wishes to grab.
      * I have setup some shortcuts like "id" in place of "_id".
      * 
-     * @param string $channel
-     * @param string $type
+     * @param string $channel The channel name.
+     * @param string $type Property name for the response object.
      * @return string|null|boolean
      * @throws Exception
      */
@@ -47,7 +47,7 @@ class Api
                 break;
         }
         
-        if(!$channel->$type) {
+        if(!property_exists($channel, $type)) {
             throw new Exception('Invalid Channel Type');
         }
         
@@ -60,7 +60,7 @@ class Api
      * May add different decoding options in the future.
      * 
      * @param string $response
-     * @return string
+     * @return object
      * @throws Exception
      */
     private function decodeResponse($response)

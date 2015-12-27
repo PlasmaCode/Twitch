@@ -1,0 +1,16 @@
+{
+    "name": "PlasmaCode/Twitch",
+    "require": {
+        "php" : ">=5.4",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": { "PlasmaCode\\Twitch\\" : "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "PlasmaCode\\Twitch\\Testing\\" : "Testing" }
+    }
+}
